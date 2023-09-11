@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0%;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./assets/Background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+nav {
+    width: 50%;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #D870DB;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity: 0;}
+40% {opacity: 1;}
+80% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity: 0;}
+40% {opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
+}
+
+.arrows path.a1 {
+    animation-delay: -0.6s;
+    -webkit-animation-delay: -0.6s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.3s;
+    -webkit-animation-delay: -0.3s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.content-container {
+    height: 100vh;
+    background-color: #333;
+}
+
+.profile-container {
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('./assets/akin-cakiner-xKBmqz66gEs-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-content {
+    width: 30%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #D870DB;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.profile-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #D870DB;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse {
+    width: 430px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 17px;
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/projectbg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-content {
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 700px;
+    height: 200px;
+    background-color: #333;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    width: 350px;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    right: 20px;
+    top: 40px;
+}
+
+.image-reverse {
+    left: 20px;
+}
+
+.project-text {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./assets/background-contato.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 8px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    border-radius: 8px;
+}
+
+button {
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+    background-color: #D870DB;
+}
+
+.social-media {
+    width: 100px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #D870DB;
+}
+
+.container-layout {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    width: 400px;
+    height: 500px;
+}
+
+.text-layout-1 {
+    font-size: 150%;
+}
+
+.text-layout-2 {
+    font-size: 300%;
+}
+
+.text-layout-3 {
+    text-align: center;
+    font-size: 150%;
+}
+
